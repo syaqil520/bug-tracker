@@ -72,6 +72,8 @@ class ProjectController extends Controller
     public function show($id)
     { 
         $project = Project::with('users')->find($id);
+        // $projects = User::find(1)->projects()->with('users')->orderBy('created_at')->paginate(4);
+        
         return response()->json([
             'success' => true,
             'project' => $project

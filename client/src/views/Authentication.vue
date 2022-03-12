@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="items-center justify-center flex  min-h-screen ">
+    <div class="items-center justify-center flex  min-h-screen w-screen ">
         <div class="w-full max-w-lg mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
             <div class="px-6 py-4">
                 <h2 class="text-3xl font-bold text-center text-gray-700 dark:text-white">Bug Tracker</h2>
