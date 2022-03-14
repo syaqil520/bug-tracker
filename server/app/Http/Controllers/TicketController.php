@@ -11,10 +11,6 @@ use Illuminate\Support\Facades\Validator;
 class TicketController extends Controller
 {
 
-    public function __construct()
-    {
-        Auth::loginUsingId(1);
-    }
     
     /**
      * Display a listing of the resource.
@@ -24,7 +20,7 @@ class TicketController extends Controller
     public function index($projectId)
     {
         $project = Project::find($projectId);
-        $tickets = $project->tickets()->get();
+        $tickets = $project->tickets()->orderBy('created_at')->get();
         return response()->json([
             'success' => true,
             'tickets' => $tickets

@@ -2,6 +2,7 @@ import { createStore } from 'vuex'
 import createPersistedState from 'vuex-persistedstate'
 import Authentication  from './Authentication'
 import Project from './Project'
+import Ticket from './Ticket'
 export default createStore({
   plugins: [
     createPersistedState()
@@ -14,6 +15,7 @@ export default createStore({
   },
   modules: {
     Authentication,
-    Project
+    Project,
+    Ticket
   }
 })

@@ -7,13 +7,13 @@
 
         <div class="grid grid-cols-3 gap-4 mt-4 ">
 
-            <div class="col-span-2 card-white w-full ">
+            <div class="col-span-3 card-white w-full ">
                 <ticket-card></ticket-card>
             </div>
 
-            <div class="col-span-1 card-white w-full">
+            <!-- <div class="col-span-1 card-white w-full"> -->
 
-            </div>
+            <!-- </div> -->
 
         </div>
     </div>
